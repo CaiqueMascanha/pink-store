@@ -1,0 +1,33 @@
+.categorias {
+  margin: 1em 2em 5em 2em;
+}
+
+.container__categorias {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2em;
+  width: 100%;
+  padding: 2em 0;
+}
+
+.container__categorias__img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.container__categorias__img img {
+  border-radius: 50%;
+}
+
+.container__categorias__img a {
+  text-decoration: none;
+  font-weight: 500;
+  color: var(--preto);
+}
+
+

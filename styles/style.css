@@ -3,6 +3,7 @@
 @import url("../styles/pesquisar.css");
 @import url("../styles/banner.css");
 @import url("../styles/compras.css");
+@import url("../styles/categorias.css");
 
 :root {
   --rosa: #ffc5d5;
@@ -13,6 +14,8 @@
   --fonte-principal:  'Montserrat', sans-serif;
   --fonte-secundaria: 'Roboto Mono', monospace;
 }
+
+
 
 body {
   font-size: 1rem;

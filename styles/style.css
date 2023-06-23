@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap');
 @import url("../styles/header.css");
+@import url("../styles/pesquisar.css");
 
 :root {
   --rosa: #ffc5d5;
@@ -14,5 +15,5 @@
 body {
   font-size: 1rem;
   background-color: var(--crinza);
-  
+  font-family: var(--fonte-principal);
 }

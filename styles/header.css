@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .cabecalho__menu{
@@ -15,3 +16,38 @@
   height: 100%;
   padding-left: 1em;
 }
+
+.menu__nav {
+  position: absolute;
+  top: 100%;
+  left: 65%;
+  display: none;
+  background-color: var(--rosa);
+  width: 100%;
+  padding-left: 0.5em;
+}
+
+.container__botao {
+  display: none;
+}
+
+.container__botao:checked ~ .menu__nav {
+  display: block;
+}
+
+.menu__nav__li {
+  padding-bottom: 1.5em;
+  
+}
+
+.menu__nav__li a {
+  text-decoration: none;
+  font-family: var(--fonte-secundaria);
+  color: var(--preto);
+}
+
+.menu__nav__li a:focus {
+  color: var(--rosa-choque);
+} 
+
+

@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./styles/reset.css">
   <link rel="stylesheet" href="./styles/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+  <link rel="icon" href="./img/logo/pinkrosalogo.png" type="image/x-icon">
   <title>Pink Store</title>
 </head>
 <body>
@@ -12,25 +14,34 @@
   <!-- Cabeçalho -->
   <header class="cabecalho">
     <img class="cabecalho__img" src="./img/logo/pinkrosalogo.png" alt="Logo da Pink Rosa">
-    <input type="checkbox" id="menu" class="container__botao">
-    <label for="menu">
+    <a href="#">
       <img class="cabecalho__menu" src="./img/header/icon.svg" alt="Logo da Pink Rosa">
-    </label>
-    <nav class="menu__nav">
-      <ul class="menu__nav__ul">
-        <li class="menu__nav__li">
-          <a href="#">Home</a>
-        </li>
-        <li class="menu__nav__li">
-          <a href="#">Nossas lojas</a>
-        </li>
-        <li class="menu__nav__li">
-          <a href="#">Novidades</a>
-        </li>
-        <li class="menu__nav__li">
-          <a href="#">Promoções</a>
-        </li>
-      </ul>
+    </a>
+    
+      <!-- Seção de compras -->
+    <section class="compras">
+      <a href="#" class="icones">
+        <img src="./img/icones/home.svg" alt="Icone home">
+        <p>Home</p>
+      </a>
+      <a href="#" class="icones">
+        <img src="./img/icones/search.svg" alt="Icone categoria">
+        <p>Categoria</p>
+      </a>
+      <a href="#" class="icones">
+        <img src="./img/icones/clothing.svg" alt="Icone novo">
+        <p>Novo</p>
+      </a>
+      <a href="#" class="icones">
+        <img src="./img/icones/cart.svg" alt="Icone carrinho">
+        <p>Carrinho</p>
+      </a>
+      <a href="#" class="icones">
+        <img src="./img/icones/profile.svg" alt="Icone perfil">
+        <p>Perfil</p>
+      </a>
+    </section>
+    
   </header>
 
   <!-- Seção de pesquisa de produtos -->
@@ -43,6 +54,67 @@
     </div>
   </section>
 
+  <!-- Seção banner -->
+  <section class="banner">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img src="./img/banner/BANNER-ROUPAS4.png" alt="Banner"></div>
+        <div class="swiper-slide"><img src="./img/banner/BANNER-ROUPAS5.png" alt="Banner"></div>
+        <div class="swiper-slide"><img src="./img/banner/BANNER-ROUPAS6.png" alt="Banner"></div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+  </section>
+
+  <!-- Seção facilidades -->
+  <section class="facilidades">
+        <div class="facilidades__img">
+          <img src="./img/facilidade/x-diamond.svg" alt="Facilidade Pix">
+          <div class="facilidades__Texto">
+            <h2>Pague pelo pix</h2>
+            <p>Ganhe 5% OFF em
+              pagamentos via PIX</p>
+          </div>
+        </div>
+        <div class="facilidades__img">
+          <img src="./img/facilidade/arrow-repeat.svg" alt="Banner">
+          <div class="facilidades__Texto">
+            <h2>Troca grátis</h2>
+            <p>Fique livre para trocar em até 30 dias.</p>
+          </div>
+        </div>
+        <div class="facilidades__img">
+          <img src="./img/facilidade/flower1.svg" alt="Banner">
+          <div class="facilidades__Texto">
+            <h2>Sustentabilidade</h2>
+            <p>Moda responsável, que respeita o meio ambiente.</p>
+          </div>
+        </div>
+  </section>
+
+
+
   <script src="./main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.swiper', {
+      speed: 400,
+      spaceBetween: 100,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+      autoplay: {
+        delay: 5000,
+      },
+    });
+  </script>
 </body>
 </html>

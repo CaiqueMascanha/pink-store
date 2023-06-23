@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto+Mono:wght@400;700&display=swap');
+@import url("../styles/header.css");
+
+:root {
+  --rosa: #ffc5d5;
+  --rosa-choque: #ffc5d5;
+  --preto: #000000;
+  --branco: #FFFFFF;
+  --crinza: #dfdfdf;
+  --fonte-principal:  'Montserrat', sans-serif;
+  --fonte-secundaria: 'Roboto Mono', monospace;
+}
+
+body {
+  font-size: 1rem;
+  background-color: var(--crinza);
+}

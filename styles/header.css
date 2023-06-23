@@ -1,0 +1,17 @@
+.cabecalho {
+  background-color: var(--rosa);
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cabecalho__menu{
+  height: 40px;
+  padding-right: 2em;
+}
+
+.cabecalho__img {
+  height: 100%;
+  padding-left: 1em;
+}
